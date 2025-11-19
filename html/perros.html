@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos para Perros | PetShop</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/catalogo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="main-header">
+  <nav class="nav-bar">
+    <a href="catalogo.html" class="logo">
+      <i class="fa-solid fa-paw"></i> PetShop
+    </a>
+
+    <div class="menu-links">
+      <a href="catalogo.html">Volver</a>
+      <a href="login.html">Salir</a>
+
+      <!-- Carrito -->
+      <a href="carrito.html" class="carrito-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="contador-carrito">0</span>
+      </a>
+    </div>
+  </nav>
+</header>
+
+  <main class="catalogo">
+    <div class="producto">
+      <img src="../img/alimento-balanced-perro-adulto-raza-mediana.webp" alt="Alimento para perros">
+      <h3>Alimento Balanced Perro Adulto</h3>
+      <p id="precio-perro1" class="precio">$15.804</p>
+      <div class="opciones">
+        <button class="btn" onclick="cambiarPrecio('precio-perro1', 15804)">3 kg</button>
+        <button class="btn-secondary" onclick="cambiarPrecio('precio-perro1', 47061)">15 kg</button>
+        <button class="btn-danger" onclick="cambiarPrecio('precio-perro1', 68121)">20 kg</button>
+      </div>
+      <button class="btn agregar-carrito" data-nombre="Alimento Balanced Perro Adulto" data-precio="15804" data-img="../img/alimento-balanced-perro-adulto-raza-mediana.webp">
+        🛒 Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="../img/alimento-royal-canin-perro-medium-dermacomfort.webp" alt="Alimento para perros">
+      <h3>Alimento Royal Medium</h3>
+      <p id="precio-perro2" class="precio">$15.804</p>
+      <div class="opciones">
+        <button class="btn" onclick="cambiarPrecio('precio-perro2', 15804)">3 kg</button>
+        <button class="btn-secondary" onclick="cambiarPrecio('precio-perro2', 47061)">15 kg</button>
+        <button class="btn-danger" onclick="cambiarPrecio('precio-perro2', 68121)">20 kg</button>
+      </div>
+<button class="btn agregar-carrito" data-nombre="Alimento Royal Medium" data-precio="15804" data-img="../img/alimento-royal-canin-perro-medium-dermacomfort.webp">
+        🛒 Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="../img/collar perro.jpg" alt="Collar para perros">
+      <h3>Collar Antideslizante</h3>
+      <p id="precio-perro3" class="precio">$4.200</p>
+      <div class="opciones">
+        <button class="btn" onclick="cambiarPrecio('precio-perro3', 4200)">S</button>
+        <button class="btn-secondary" onclick="cambiarPrecio('precio-perro3', 5200)">M</button>
+        <button class="btn-danger" onclick="cambiarPrecio('precio-perro3', 6200)">L</button>
+      </div>
+      <button class="btn agregar-carrito" data-nombre="Collar Antideslizante" data-precio="15804" data-img="../img/collar perro.jpg">
+        🛒 Agregar al carrito</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 PetShop Online | Sección Perros 🐶</p>
+  </footer>
+
+  <script>
+    function cambiarPrecio(id, valor) {
+      const precio = document.getElementById(id);
+      precio.textContent = "$" + valor.toLocaleString("es-AR");
+    }
+  </script>
+  <script src="../js/carrito.js"></script>
+<a href="https://wa.me/5492616966923" class="whatsapp-btn" target="_blank">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+</body>
+</html>

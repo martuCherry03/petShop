@@ -1,0 +1,183 @@
+/* ESTRUCTURA GENERAL */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+/* ENCABEZADO */
+.main-header {
+  background-color: #0486ffea;
+  color: #fafafa;
+  text-align: center;
+  padding: 15px;
+}
+
+.main-header nav a {
+  margin: 10px;
+  color: #fafafa;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-header nav a.active {
+  color: #ffffff;
+}
+
+/* PIE DE PÁGINA */
+footer {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #0486ffea;
+  color: #ddd0d0;
+  margin-top: auto;
+}
+
+/* BOTONES */
+.btn, .btn-secondary, .btn-danger {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 8px 0;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn {
+  background-color: #6dc36d;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #57a05b;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: #f3b53b;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #d79e30;
+  transform: translateY(-2px);
+}
+
+.btn-danger {
+  background-color: #f36464;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #d84e4e;
+  transform: translateY(-2px);
+}
+
+/* Carrito */
+.carrito-icon {
+  position: relative;
+  font-size: 22px;
+  color: white;
+}
+
+#contador-carrito {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Navbar */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.menu-links a {
+  margin-left: 12px;
+  color: #fafafa;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Animación carrito */
+@keyframes agregado {
+  50% { transform: scale(1.15); }
+}
+.boton-agregado {
+  animation: agregado 0.4s ease;
+}
+
+/* Botón de WhatsApp */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 65px;
+  height: 65px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+  z-index: 999;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+}
+/* Funciones del carrito */
+
+.btn-agregar {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-agregar:hover {
+  transform: scale(1.05);
+}
+
+@keyframes agregado {
+  50% { transform: scale(1.2); }
+}
+
+.boton-agregado {
+  animation: agregado 0.3s ease;
+}
+
+.carrito-icon {
+  position: relative;
+  font-size: 24px;
+  color: white;
+}
+
+#contador-carrito {
+  position: absolute;
+  top: -10px;
+  right: -12px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+}

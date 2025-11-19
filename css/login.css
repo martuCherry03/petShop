@@ -1,0 +1,76 @@
+/* === LOGIN PAGE === */
+
+body {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.main-header {
+  background-color: #0d8bff;
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+}
+
+/* Contenedor principal */
+.login {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Caja del login */
+.login-box {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 35px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.18);
+}
+
+.login-box h2 {
+  margin-bottom: 8px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.login-box p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Botones FULL width */
+.login-box a.btn,
+.login-box a.btn-secondary {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 17px;
+}
+
+/* Link Inicio */
+.login-box .link {
+  display: block;
+  margin-top: 18px;
+  color: #0d8bff;
+  font-weight: bold;
+}
+
+.login-box .link:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #0d8bff;
+  padding: 10px 0;
+  text-align: center;
+  color: #eee;
+}

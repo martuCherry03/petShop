@@ -1,0 +1,16 @@
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff8e1;
+}
+
+.hero img {
+  width: 220px;
+  margin-top: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.hero img:hover {
+  transform: scale(1.05);
+}
